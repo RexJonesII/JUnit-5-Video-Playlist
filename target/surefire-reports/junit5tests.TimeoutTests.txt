@@ -1,0 +1,94 @@
+-------------------------------------------------------------------------------
+Test set: junit5tests.TimeoutTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 58.746 s <<< FAILURE! - in junit5tests.TimeoutTests
+junit5tests.TimeoutTests.testTimeoutAssertion  Time elapsed: 12.933 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+ Test Failed Due To Timeout 
+ ==> execution exceeded timeout of 3000 ms by 1003 ms
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTimeout.assertTimeout(AssertTimeout.java:81)
+	at org.junit.jupiter.api.AssertTimeout.assertTimeout(AssertTimeout.java:57)
+	at org.junit.jupiter.api.AssertTimeout.assertTimeout(AssertTimeout.java:39)
+	at org.junit.jupiter.api.Assertions.assertTimeout(Assertions.java:3311)
+	at junit5tests.TimeoutTests.testTimeoutAssertion(TimeoutTests.java:81)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+
+junit5tests.TimeoutTests.testDownloadProgress_1  Time elapsed: 15.855 s  <<< ERROR!
+java.util.concurrent.TimeoutException: testDownloadProgress_1() timed out after 1 second
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	Suppressed: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [67668647-4051-4e0f-ac0f-4c84abf94255, findElement [using, value]]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 122.0.1, moz:accessibilityChecks: false, moz:buildID: 20240205133611, moz:debuggerAddress: 127.0.0.1:10368, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19936, moz:profile: C:\Users\RexJo\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:10368/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 67668647-4051-4e0f-ac0f-4c84abf94255
+		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:629)
+		at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+		at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+		at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+		at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+		at junit5tests.TimeoutTests.testDownloadProgress_1(TimeoutTests.java:37)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		... 2 more
+	Caused by: java.lang.RuntimeException: NettyHttpHandler request interrupted
+		at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:63)
+		at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+		at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+		at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
+		at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)
+		at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
+		at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+		at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+		... 8 more
+	Caused by: java.lang.InterruptedException
+		at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+		at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
+		at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+		at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+		... 16 more
+
+junit5tests.TimeoutTests.testDownloadProgress_2  Time elapsed: 13.345 s  <<< ERROR!
+java.util.concurrent.TimeoutException: testDownloadProgress_2() timed out after 2000 milliseconds
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	Suppressed: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f8dc31ce-6105-4f98-900b-8e979806bab5, findElement [using, value]]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 122.0.1, moz:accessibilityChecks: false, moz:buildID: 20240205133611, moz:debuggerAddress: 127.0.0.1:44160, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22428, moz:profile: C:\Users\RexJo\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:44160/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f8dc31ce-6105-4f98-900b-8e979806bab5
+		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:629)
+		at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+		at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+		at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+		at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+		at junit5tests.TimeoutTests.testDownloadProgress_2(TimeoutTests.java:53)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		... 2 more
+	Caused by: java.lang.RuntimeException: NettyHttpHandler request interrupted
+		at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:63)
+		at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+		at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+		at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
+		at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)
+		at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:188)
+		at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+		at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+		... 8 more
+	Caused by: java.lang.InterruptedException
+		at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:385)
+		at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
+		at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+		at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+		... 16 more
+

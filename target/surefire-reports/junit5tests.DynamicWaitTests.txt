@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: junit5tests.DynamicWaitTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.772 s <<< FAILURE! - in junit5tests.DynamicWaitTests
+junit5tests.DynamicWaitTests.fluentWaitTest  Time elapsed: 6.504 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+
+ Expected & Actual Messages Do Not Match 
+ ==> expected: <100> but was: <100%>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1152)
+	at junit5tests.DynamicWaitTests.fluentWaitTest(DynamicWaitTests.java:62)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+

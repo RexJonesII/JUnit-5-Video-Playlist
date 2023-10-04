@@ -1,0 +1,5 @@
+junit4tests\JUnit4Tests.class
+junit4tests\ConvertJUnit4ToJUnit5Tests_2.class
+junit5tests\RadioButtonDemoTestsWithoutStatic.class
+junit5tests\RadioButtonDemoTests.class
+junit4tests\ConvertJUnit4ToJUnit5Tests_1.class

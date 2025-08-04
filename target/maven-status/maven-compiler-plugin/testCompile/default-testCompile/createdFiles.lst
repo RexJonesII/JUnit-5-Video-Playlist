@@ -1,5 +1,10 @@
+junit5tests\DynamicWaitTests.class
 junit4tests\JUnit4Tests.class
+tag_filter\TagFilterTwoTest.class
 junit4tests\ConvertJUnit4ToJUnit5Tests_2.class
 junit5tests\RadioButtonDemoTestsWithoutStatic.class
+junit5tests\MinimizeBrowserTests.class
 junit5tests\RadioButtonDemoTests.class
+tag_filter\TagFilterOneTest.class
+junit5tests\TimeoutTests.class
 junit4tests\ConvertJUnit4ToJUnit5Tests_1.class

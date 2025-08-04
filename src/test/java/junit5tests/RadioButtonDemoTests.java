@@ -3,7 +3,7 @@ package junit5tests;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class RadioButtonDemoTests {
@@ -18,7 +18,7 @@ public class RadioButtonDemoTests {
   @BeforeEach
   public void beforeEach() {
     System.out.println("Execute Before Each Test Method");
-    driver = new EdgeDriver();
+    driver = new ChromeDriver();
     driver.manage().window().maximize();
     driver.get("https://www.lambdatest.com/selenium-playground/radiobutton-demo");
   }

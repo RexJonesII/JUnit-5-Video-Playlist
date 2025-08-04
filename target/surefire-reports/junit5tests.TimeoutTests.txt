@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: junit5tests.TimeoutTests
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 58.746 s <<< FAILURE! - in junit5tests.TimeoutTests
-junit5tests.TimeoutTests.testTimeoutAssertion  Time elapsed: 12.933 s  <<< FAILURE!
+Tests run: 4, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 50.38 s <<< FAILURE! -- in junit5tests.TimeoutTests
+junit5tests.TimeoutTests.testTimeoutAssertion -- Time elapsed: 11.33 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 
  Test Failed Due To Timeout 
- ==> execution exceeded timeout of 3000 ms by 1003 ms
+ ==> execution exceeded timeout of 3000 ms by 1001 ms
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
 	at org.junit.jupiter.api.AssertTimeout.assertTimeout(AssertTimeout.java:81)
@@ -18,7 +18,7 @@ org.opentest4j.AssertionFailedError:
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 
-junit5tests.TimeoutTests.testDownloadProgress_1  Time elapsed: 15.855 s  <<< ERROR!
+junit5tests.TimeoutTests.testDownloadProgress_1 -- Time elapsed: 13.34 s <<< ERROR!
 java.util.concurrent.TimeoutException: testDownloadProgress_1() timed out after 1 second
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
@@ -26,9 +26,9 @@ java.util.concurrent.TimeoutException: testDownloadProgress_1() timed out after 
 Build info: version: '4.12.0', revision: '249f2a7d1b*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [67668647-4051-4e0f-ac0f-4c84abf94255, findElement [using, value]]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 122.0.1, moz:accessibilityChecks: false, moz:buildID: 20240205133611, moz:debuggerAddress: 127.0.0.1:10368, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19936, moz:profile: C:\Users\RexJo\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:10368/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 67668647-4051-4e0f-ac0f-4c84abf94255
+Command: [b46358ee-8748-46f5-bf45-c0ce6c2e1999, findElement [using, value]]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 44880, moz:profile: C:\Users\RexJo\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: b46358ee-8748-46f5-bf45-c0ce6c2e1999
 		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:629)
 		at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
 		at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
@@ -55,7 +55,7 @@ Session ID: 67668647-4051-4e0f-ac0f-4c84abf94255
 		at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
 		... 16 more
 
-junit5tests.TimeoutTests.testDownloadProgress_2  Time elapsed: 13.345 s  <<< ERROR!
+junit5tests.TimeoutTests.testDownloadProgress_2 -- Time elapsed: 12.39 s <<< ERROR!
 java.util.concurrent.TimeoutException: testDownloadProgress_2() timed out after 2000 milliseconds
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
@@ -63,9 +63,9 @@ java.util.concurrent.TimeoutException: testDownloadProgress_2() timed out after 
 Build info: version: '4.12.0', revision: '249f2a7d1b*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [f8dc31ce-6105-4f98-900b-8e979806bab5, findElement [using, value]]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 122.0.1, moz:accessibilityChecks: false, moz:buildID: 20240205133611, moz:debuggerAddress: 127.0.0.1:44160, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 22428, moz:profile: C:\Users\RexJo\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:44160/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f8dc31ce-6105-4f98-900b-8e979806bab5
+Command: [e5ef28b9-23c6-4045-8b19-a380ed847ba7, findElement [using, value]]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0, moz:accessibilityChecks: false, moz:buildID: 20250717180000, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 39416, moz:profile: C:\Users\RexJo\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: e5ef28b9-23c6-4045-8b19-a380ed847ba7
 		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:629)
 		at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
 		at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)

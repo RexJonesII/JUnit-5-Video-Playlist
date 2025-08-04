@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: junit5tests.DynamicWaitTests
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 12.772 s <<< FAILURE! - in junit5tests.DynamicWaitTests
-junit5tests.DynamicWaitTests.fluentWaitTest  Time elapsed: 6.504 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.362 s <<< FAILURE! -- in junit5tests.DynamicWaitTests
+junit5tests.DynamicWaitTests.fluentWaitTest -- Time elapsed: 4.888 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 
  Expected & Actual Messages Do Not Match 

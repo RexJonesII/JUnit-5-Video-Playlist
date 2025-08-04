@@ -29,13 +29,13 @@
     <dependency>
       <groupId>org.junit.vintage</groupId>
       <artifactId>junit-vintage-engine</artifactId>
-      <version>5.10.0</version>
+      <version>5.13.4</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>4.12.0</version>
+      <version>4.30.0</version>
     </dependency>
     <dependency>
       <groupId>org.hamcrest</groupId>
@@ -50,11 +50,17 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M9</version>
+        <version>3.4.0</version>
         <configuration>
-          <groups>Regression</groups>
-<!--          <excludedGroups>Stress</excludedGroups>-->
-          <excludes>**/*TagFilterTwoTest.java</excludes>
+          <excludes>
+            <exclude>junit5tests/**/*.java/</exclude>
+          </excludes>
+<!--          <includes>-->
+<!--            <include>junit4tests/**/*.java</include>-->
+<!--          </includes>-->
+<!--          <groups>Regression</groups>-->
+<!--          &lt;!&ndash;          <excludedGroups>Stress</excludedGroups>&ndash;&gt;-->
+<!--          <excludes>**/*TagFilterTwoTest.java</excludes>-->
         </configuration>
       </plugin>
     </plugins>

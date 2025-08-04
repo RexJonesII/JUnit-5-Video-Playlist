@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: junit5tests.RadioButtonDemoTestsWithoutStatic
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.137 s <<< FAILURE! - in junit5tests.RadioButtonDemoTestsWithoutStatic
-junit5tests.RadioButtonDemoTestsWithoutStatic.testSelectedRadioButtonMessage  Time elapsed: 4.827 s  <<< FAILURE!
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.285 s <<< FAILURE! -- in junit5tests.RadioButtonDemoTestsWithoutStatic
+junit5tests.RadioButtonDemoTestsWithoutStatic.testSelectedRadioButtonMessage -- Time elapsed: 3.169 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: 
 
  Actual & Expected Messages Do Not Match ==> expected: <Radio Button 'Female' Is Checked> but was: <Radio button 'Female' is checked>

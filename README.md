@@ -32,7 +32,7 @@ To get a local copy up and running, follow these steps:
 *   Maven [https://maven.apache.org/](https://maven.apache.org/)
 
 
-# ▶️ Video Playlist
+# ▶️ Watch Videos 
 [https://www.youtube.com/playlist?list=PLZMWkkQEwOPk4W5Qvge7OsDDXuqsOnNEE](https://www.youtube.com/playlist?list=PLZMWkkQEwOPk4W5Qvge7OsDDXuqsOnNEE)
 
 
